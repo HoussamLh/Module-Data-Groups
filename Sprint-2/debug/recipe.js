@@ -5,9 +5,6 @@
 // Each ingredient should be logged on a new line
 // How can you fix it?
 
-
-  
-
 const recipe = {
   title: "bruschetta",
   serves: 2,
@@ -15,5 +12,8 @@ const recipe = {
 };
 
 console.log(`${recipe.title} serves ${recipe.serves}
-ingredients:
-${recipe.ingredients.join("\n")}`);
+ingredients:`);
+
+for (const ingredient of recipe.ingredients) {
+  console.log(ingredient);
+}
