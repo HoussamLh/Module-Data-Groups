@@ -1,3 +1,0 @@
-function parseQueryString() {
-  return {};
-}
